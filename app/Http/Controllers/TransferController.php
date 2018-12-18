@@ -24,16 +24,16 @@ class TransferController extends Controller
    */
   public function index()
   {
-      return view('transfer');
+      return view('transfer/transfer');
   }
 
   public function tr()
   {
-      return view('transfer');
+      return view('transfer/tr');
   }
 
   public function rq()
   {
-      return view('transfer');
+      return view('transfer/rq');
   }
 }

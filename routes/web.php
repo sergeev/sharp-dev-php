@@ -18,6 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/transfer', 'TransferController@index')->name('transfer');
-Route::get('/tr', 'TransferController@tr')->name('transfer');
-Route::get('/rq', 'TransferController@rq')->name('transfer');
+Route::get('/transfer', 'TransferController@index')->name('transfer_global_page');
+Route::get('/tr', 'TransferController@tr')->name('transfer_tr_page');
+Route::get('/rq', 'TransferController@rq')->name('transfer_rq_page');

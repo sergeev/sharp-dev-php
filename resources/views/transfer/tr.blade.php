@@ -14,8 +14,19 @@
                         </div>
                     @endif
                     Select an action:
-                    <a class="nav-link" href="{{ route('tr') }}">{{ __('Transfer') }}</a>
-                    <a class="nav-link" href="{{ route('rq') }}">{{ __('To request') }}</a>
+                    <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <div class="icon-addon addon-md">
+                            <input type="text" placeholder="What are you looking for?" class="form-control">
+                        </div>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Search!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="products" class="row list-group">
+            </div>
                 </div>
             </div>
         </div>
