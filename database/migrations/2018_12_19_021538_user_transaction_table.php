@@ -15,11 +15,11 @@ class UserTransactionTable extends Migration
     {
         Schema::create('user_transaction_table ', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamp('data_or_time');
+            $table->timestamps();
             $table->string('transfer_to_user');
             $table->string('transaction_amount');
+            $table->string('balance_amount');
             $table->rememberToken();
-            $table->timestamps();
         });
     }
 

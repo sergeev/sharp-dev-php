@@ -59,9 +59,9 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '5432'),
+            'port' => env('DB_PORT', '5433'),
             'database' => env('DB_DATABASE', 'sharp_dev_php'),
-            'username' => env('DB_USERNAME', 'sergeev'),
+            'username' => env('DB_USERNAME', 'postgres'),
             'password' => env('DB_PASSWORD', '10184'),
             'charset' => 'utf8',
             'prefix' => '',
