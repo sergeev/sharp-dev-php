@@ -23,6 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        //$transaction = TransferController::all()->tiArray();
+        return view('home', compact('transaction'));
     }
 }

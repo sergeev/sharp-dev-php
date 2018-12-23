@@ -13,7 +13,7 @@ class UserTransactionTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_transaction_table ', function (Blueprint $table) {
+        Schema::create('user_transaction_table', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('transfer_to_user');
@@ -30,6 +30,6 @@ class UserTransactionTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('user_transaction_table');
     }
 }

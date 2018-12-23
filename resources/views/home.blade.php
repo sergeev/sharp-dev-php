@@ -13,8 +13,26 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                    <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
 
-                    Your recent currency transactions
+                      <tr>
+                        <td>id</td>
+                        <td>transfer_to_user</td>
+                        <td>transaction_amount</td>
+                        <td>date</td>
+                      </tr>
+
+                    </tbody>
+                  </table>
                 </div>
             </div>
         </div>
