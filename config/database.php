@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -46,7 +46,7 @@ return [
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'sharp_dev_php'),
             'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', '10184902125410'),
+            'password' => env('DB_PASSWORD', '10184'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -59,9 +59,9 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '5432'),
+            'port' => env('DB_PORT', '5433'),
             'database' => env('DB_DATABASE', 'sharp_dev_php'),
-            'username' => env('DB_USERNAME', 'sergeev'),
+            'username' => env('DB_USERNAME', 'postgres'),
             'password' => env('DB_PASSWORD', '10184'),
             'charset' => 'utf8',
             'prefix' => '',

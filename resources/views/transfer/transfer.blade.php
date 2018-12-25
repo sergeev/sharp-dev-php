@@ -14,8 +14,8 @@
                         </div>
                     @endif
                     Select an action:
-                    <a class="nav-link" href="{{ url('tr') }}">{{ __('Transfer') }}</a>
-                    <a class="nav-link" href="{{ url('rq') }}">{{ __('To request') }}</a>
+                    <a class="nav-link" href="{{ route('transfer_tr_page') }}">{{ __('Transfer') }}</a>
+                    <a class="nav-link" href="{{ route('transfer_rq_page') }}">{{ __('To request') }}</a>
                 </div>
             </div>
         </div>

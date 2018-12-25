@@ -15,9 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::group(['prefix' => 'manage', 'namespace' => 'Admin', 'middleware' => ['auth']], function() {
+  Route::get('/', 'ManageController@manage')->name('manage.index');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/transfer', 'TransferController@index')->name('transfer_global_page');
-Route::get('/tr', 'TransferController@tr')->name('transfer_tr_page');
-Route::get('/rq', 'TransferController@rq')->name('transfer_rq_page');
