@@ -22,18 +22,14 @@
                 		            <div class="row">
                 		                <div class="col-md-12">
                 		                    <form>
-                                          <div class="form-group row">
-                                            <label for="name" class="col-4 col-form-label">First Name</label>
-                                            <div class="col-8">
-                                              <input id="name" name="name" placeholder="First Name" class="form-control here" type="text">
-                                            </div>
-                                          </div>
                                               <div class="form-group row">
-                                                <label for="name" class="col-4 col-form-label">First Name</label>
-                                                <div class="col-8">
-                                                  <input id="name" name="name" placeholder="First Name" class="form-control here" type="text">
+                                                <label for="name" class="col-3 col-form-label">First Name</label>
+                                                <label for="name" class="col-6 col-form-label">First Name</label>
+                                                <div class="col-3">
+                                                  <button name="submit" type="submit" class="btn btn-primary">Update My Profile</button>
                                                 </div>
                                               </div>
+
                                               <div class="form-group row">
                                                 <label for="lastname" class="col-4 col-form-label">Last Name</label>
                                                 <div class="col-8">
