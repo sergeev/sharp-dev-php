@@ -23,3 +23,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/transfer', 'TransferController@index')->name('transfer_global_page');
+
+Route::group(['prefix' => 'profile', 'namespace' => 'Profile', 'middleware' => ['auth']], function() {
+  Route::get('/', 'ProfileController@index')->name('profile.index');
+  Route::get('/edit', 'ProfileController@edit')->name('profile.edit');
+});
